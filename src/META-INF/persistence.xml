@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="slSystemPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>client.Client</class>
+    <class>client.Carepack</class>
+    <class>client.ClientFolder</class>
+    <class>client.Category</class>
+    <class>client.Clientfolder</class>
+    <class>client.Schedule</class>
+    <class>client.Usergroup</class>
+    <class>client.Reminder</class>
+    <class>client.Users</class>
+    <class>Classes.Clientfolder</class>
+    <class>Classes.Carepack</class>
+    <class>Classes.Category</class>
+    <class>Classes.Reminder</class>
+    <class>Classes.Usergroup</class>
+    <class>Classes.Users</class>
+    <class>Classes.Client</class>
+    <class>Classes.Schedule_1</class>
+    <class>Classes.Schedule</class>
+    <class>Classes.Docs</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/lsdb"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+    </properties>
+  </persistence-unit>
+</persistence>
